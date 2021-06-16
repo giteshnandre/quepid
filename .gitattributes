@@ -1,13 +1,13 @@
 # Handle line endings automatically for files detected as text
 # and leave all files detected as binary untouched.
-*               text=auto
+*               text=auto eol=lf
 
 #
 # The above will handle all files NOT found below
 #
 # These files are text and should be normalized (Convert crlf => lf)
 *.bal           text
-*.bash          text eol=lf
+*.bash          text
 *.css           text diff=css
 *.df            text
 *.htm           text diff=html
@@ -17,7 +17,7 @@
 *.properties    text
 *.rb            text
 *.scss          text diff=css
-*.sh            text eol=lf
+*.sh            text
 *.tld           text
 *.txt           text
 *.tag           text
